@@ -11,11 +11,51 @@
       {{ title }}
     </h1>
 
+    <h2>Identity</h2>
+
+    <form id="id_form">
+      <h3>World of Warcraft</h3>
+      <input class="form-control" type="text" class="username" name="ta_WOW_id" id="ta_WOW_id" placeholder="Character Name">
+      <select class="form-control" id="sl_WOW_realm">
+        <option value="">Select Realm</option>
+        <option value="aegwynn">Aegwynn (PvP)</option>
+        <option value="zuluhed">Zuluhed (PvP)</option>
+      </select>
+      <h3>League of Legends</h3>
+      <input class="form-control" id="ta_LOL_id" placeholder="Summoner Name">
+      <select class="form-control" id="sl_LOL_region">
+        <option value="">Select Region</option>
+        <option value="na">North Ameria</option>
+        <option value="oec">Oceania</option>
+      </select>
+      <h3>Gender</h3>
+      <select class="form-control" id="sl_gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">Others</option>
+      </select>
+      <p>
+        <input class="btn btn-large" type="submit" value="Validate">
+      </p>
+    </form>
+
+
+
     <h2>/validate/existing/:gamer/:game</h2>
+
+    <a href="#" class="btn btn-success btn-large">
+      <i class="icon-white icon-ok"></i> Existing</a>
 
     <h2>/validate/duplicate/:gamer</h2>
 
+    <a href="#" class="btn btn-success btn-large">
+      <i class="icon-white icon-ok"></i> Duplicate</a>
+
     <h2>/save</h2>
+
+    <a href="#" class="btn btn-success btn-large">
+      <i class="icon-white icon-ok"></i> Save</a>
 
 
     <script src="//cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js">
