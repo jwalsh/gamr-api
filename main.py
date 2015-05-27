@@ -9,7 +9,7 @@ def index():
 
 # url_for('static', filename='index.js')
 
-@app.route('/validate/existing/<gamer>/<game>')
+@app.route('/api/validate/existing/<gamer>/<game>')
 def validate_existing(gamer, game):
     data = {
         'data': 'true',
@@ -19,7 +19,7 @@ def validate_existing(gamer, game):
     return jsonify(data)
 
 
-@app.route('/validate/duplicate/<gamer>')
+@app.route('/api/validate/duplicate/<gamer>')
 def validate_duplicate(gamer):
     data = {
         'data': 'true',
@@ -28,7 +28,7 @@ def validate_duplicate(gamer):
     return jsonify(data)
 
 
-@app.route('/save')
+@app.route('/api/save')
 def save():
     return jsonify({})
 
