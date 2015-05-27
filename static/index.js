@@ -59,7 +59,7 @@ $('#validate-game-exists').click(function() {
 
 $('#validate-existing-gamer').click(function() {
     console.log('validate existing gamer');
-    $.get('/validate/existing/:gamer/:game',
+    $.get('/api/validate/existing/:gamer/:game',
           function(data) {
               console.log(data);
           });
@@ -68,7 +68,7 @@ $('#validate-existing-gamer').click(function() {
 
 $('#validate-duplicate-gamer').click(function() {
     console.log('validate duplicate gamer');
-    $.get('/validate/duplicate/:gamer',
+    $.get('/api/validate/duplicate/:gamer',
           function(data) {
               console.log(data);
           });
@@ -77,7 +77,7 @@ $('#validate-duplicate-gamer').click(function() {
 
 $('#save').click(function() {
     console.log('save');
-    $.get('/save',
+    $.get('/api/save',
           function(data) {
               console.log(data);
           });
