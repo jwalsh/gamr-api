@@ -1,6 +1,6 @@
 console.log('index.js');
 
-$('#id_form').validate();
+$('#id-form').validate();
 
 // Provided games
 var $provided_games = function() {
@@ -43,9 +43,29 @@ var validate_provided_games = function() {
     return valid;
 };
 
-$('#validate_game_exists').click(function() {
+$('#validate-game-exists').click(function() {
     console.log('game exists:' + JSON.stringify(validate_exists_game()));
     if (validate_exists_game()) {
         console.log('provided games valid: ' + validate_provided_games());
     }
+});
+
+$('#validate-game-exists').click(function() {
+    console.log('game exists:' + JSON.stringify(validate_exists_game()));
+    if (validate_exists_game()) {
+        console.log('provided games valid: ' + validate_provided_games());
+    }
+});
+
+$('#validate-existing-gamer').click(function() {
+    console.log('validate existing gamer');
+});
+
+
+$('#validate-duplicate-gamer').click(function() {
+    console.log('validate duplicate gamer');
+});
+
+$('#save').click(function() {
+    console.log('save');
 });

@@ -13,16 +13,16 @@
 
     <h2>Identity</h2>
 
-    <form id="id_form">
+    <form id="id-form">
       <h3>World of Warcraft</h3>
       <fieldset>
         <input class="username form-control" type="text"
                data-game-set="wow"
                value="jwalsh"
-               name="ta_WOW_id" id="ta_WOW_id" placeholder="Character Name">
+               name="ta-WOW-id" id="ta-WOW-id" placeholder="Character Name">
         <select class="form-control"
                 data-game-set="wow"
-                id="sl_WOW_realm">
+                id="sl-WOW-realm">
           <option value="">Select Realm</option>
           <option value="aegwynn" selected>Aegwynn (PvP)</option>
           <option value="zuluhed">Zuluhed (PvP)</option>
@@ -32,24 +32,24 @@
       <fieldset>
         <input class="username form-control" type="text"
                data-game-set="lol"
-               name="ta_LOL_id" id="ta_LOL_id" placeholder="Summoner Name">
+               name="ta-LOL-id" id="ta-LOL-id" placeholder="Summoner Name">
         <select class="form-control"
                 data-game-set="lol"
-                id="sl_LOL_region">
+                id="sl-LOL-region">
           <option value="">Select Region</option>
           <option value="na">North Ameria</option>
           <option value="oec">Oceania</option>
         </select>
       </fieldset>
       <h3>Gender</h3>
-      <select class="form-control" id="sl_gender" required>
+      <select class="form-control" id="sl-gender" required>
         <option value="">Select Gender</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
         <option value="others">Others</option>
       </select>
       <p>
-        <input class="btn btn-large" id="validate_game_exists" type="submit" value="Validate Game Exists">
+        <input class="btn btn-large" id="validate-game-exists" type="submit" value="Validate Game Exists">
       </p>
       <p>
         <input class="btn btn-large" type="submit" value="Validate All">
@@ -60,17 +60,23 @@
 
     <h2>/validate/existing/:gamer/:game</h2>
 
-    <a href="#" class="btn btn-success btn-large">
+    <a href="#"
+       id="validate-existing-gamer"
+       class="btn btn-success btn-large">
       <i class="icon-white icon-ok"></i> Existing</a>
 
     <h2>/validate/duplicate/:gamer</h2>
 
-    <a href="#" class="btn btn-success btn-large">
+    <a href="#"
+       id="validate-duplicate-gamer"
+       class="btn btn-success btn-large">
       <i class="icon-white icon-ok"></i> Duplicate</a>
 
     <h2>/save</h2>
 
-    <a href="#" class="btn btn-success btn-large">
+    <a href="#"
+       id="save"
+       class="btn btn-success btn-large">
       <i class="icon-white icon-ok"></i> Save</a>
 
 
