@@ -1,12 +1,13 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 # from livereload import Server
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'GAMR Services'
+    return render_template('index.html', title = 'GAMR API')
 
+# url_for('static', filename='index.js')
 
 @app.route('/validate/existing/<gamer>/<game>')
 def validate_existing(gamer, game):
