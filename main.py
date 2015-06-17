@@ -35,7 +35,4 @@ def save():
 
 
 if __name__ == '__main__':
-    app.run()
-
-# server = Server(app.wsgi_app)
-# server.serve()
+    app.run(port=5001)
