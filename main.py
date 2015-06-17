@@ -10,10 +10,11 @@ def index():
 # url_for('static', filename='index.js')
 
 @app.route('/api/validate/existing/<game>/<region>/<gamer>')
-def validate_existing(game, gamer):
+def validate_existing(game, region, gamer):
     data = {
         'data': 'true',
         'gamer': gamer,
+        'region': region,
         'game': game
     }
     return jsonify(data)
